@@ -109,8 +109,8 @@ var check_results = function(work_dir)
                     fs.removeSync(work_dir + files[i]);
                 }, 60*1000);
             }
-            def.resolve();
         });
+    def.resolve();
     return def.promise;
 };
 /////////////////////////////////////////////////////////////////////////////////////////
